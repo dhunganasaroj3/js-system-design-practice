@@ -7,7 +7,9 @@
   const countEl = document.getElementById("count");
   const searchEl = document.getElementById("search");
   const filtersEl = document.getElementById("filters");
+  const menuEl = document.getElementById("menu");
 
+  let activeCat = "System Design";
   let activeDiff = "All";
   let query = "";
 
@@ -23,6 +25,7 @@
   }
 
   function matches(q) {
+    if ((q.category || "System Design") !== activeCat) return false;
     if (activeDiff !== "All" && q.difficulty !== activeDiff) return false;
     if (!query) return true;
     const hay = (q.title + " " + q.tags.join(" ") + " " + q.prompt).toLowerCase();
@@ -76,6 +79,15 @@
       e.preventDefault();
       toggle(e.target.closest(".card"));
     }
+  });
+
+  menuEl.addEventListener("click", (e) => {
+    const tab = e.target.closest(".tab");
+    if (!tab) return;
+    menuEl.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+    activeCat = tab.dataset.cat;
+    render();
   });
 
   filtersEl.addEventListener("click", (e) => {

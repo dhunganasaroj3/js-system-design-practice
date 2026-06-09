@@ -4,15 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JS System Design Practice</title>
-  <meta name="description" content="A growing collection of system design practice questions with difficulty ratings." />
+  <meta name="description" content="System design practice questions covering general system design, React design patterns, frontend system design, and backend system design — with difficulty ratings." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <h1>🧩 System Design Practice</h1>
+      <p class="tagline">System design, React patterns, and frontend &amp; backend design — the top-tier topics for 2026.</p>
     </div>
   </header>
+
+  <nav class="menu" id="menu" role="tablist" aria-label="Question categories">
+    <div class="wrap">
+      <button class="tab active" role="tab" data-cat="System Design">System Design</button>
+      <button class="tab" role="tab" data-cat="React Patterns">React Patterns</button>
+      <button class="tab" role="tab" data-cat="Frontend System Design">Frontend System Design</button>
+      <button class="tab" role="tab" data-cat="Backend System Design">Backend System Design</button>
+    </div>
+  </nav>
 
   <main class="wrap">
     <section class="controls">
@@ -35,7 +45,7 @@
     </div>
   </footer>
 
-  <script src="questions.js?v=2"></script>
-  <script src="app.js?v=2"></script>
+  <script src="questions.js?v=3"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
