@@ -35,6 +35,13 @@ No build step — just refresh the page. The renderer (`app.js`) picks up new en
 | 8 | Notification Service | Medium |
 | 9 | Typeahead / Autocomplete Search | Medium |
 | 10 | Distributed Unique ID Generator | Easy |
+| 11 | Multi-Warehouse Inventory Count by Location | Medium |
+| 12 | Ride-Sharing Drivers Available per Zone | Medium |
+| 13 | Hotel Room Availability by City & Type | Medium |
+| 14 | Project Task Counts by Status (Kanban) | Easy |
+| 15 | Library Books Available per Branch | Easy |
+
+> Questions **11–15** are in the same flavor as Q1 — real-world entity modeling with aggregate counters that must stay correct across add / update / transition / delete.
 
 ## Local preview
 
