@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS System Design Practice</title>
+  <meta name="description" content="A growing collection of system design practice questions with difficulty ratings." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>🧩 System Design Practice</h1>
+      <p class="tagline">A growing bank of practice questions. More topics coming soon.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search questions, tags…" aria-label="Search questions" />
+      <div class="filters" id="filters" role="group" aria-label="Filter by difficulty">
+        <button class="chip active" data-diff="All">All</button>
+        <button class="chip" data-diff="Easy">Easy</button>
+        <button class="chip" data-diff="Medium">Medium</button>
+        <button class="chip" data-diff="Hard">Hard</button>
+      </div>
+    </section>
+
+    <p id="count" class="count"></p>
+    <section id="list" class="list"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Built for practice • Add new questions in <code>questions.js</code></p>
+    </div>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
